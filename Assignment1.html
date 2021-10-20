@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo App</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body class="container">
+    <br />
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="item-name">Item Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="item-name"
+                placeholder="Item Name"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="item-price">Price</label>
+              <input
+                type="number"
+                class="form-control"
+                id="item-price"
+                placeholder="Price"
+              />
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="quantity">Quntity</label>
+              <input
+                type="number"
+                class="form-control"
+                id="quantity"
+                placeholder="quantity"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="due-date">Due Date</label>
+              <input type="date" class="form-control" id="due-date" placeholder="Due Date" />
+            </div>
+          </div>
+
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="comments">Comments</label>
+              <input
+                type="text"
+                class="form-control"
+                id="comments"
+                placeholder="Comments"
+              />
+            </div>
+          </div>
+        </div>
+        <div>
+          <button id="add" class="btn btn-primary from-control" onclick="multiply()">Create</button>
+        </div>
+      </div>
+    </div>
+    <table id="list" class="table table-dark table-striped">
+      <tr>
+        <th>ORDER ID</th>
+        <th>Date Created</th>
+        <th>Item</th>
+        <th>Quantity</th>
+        <th>Due Date</th>
+        <th name="total-price" id="total-price" >Total Price</th>
+        <th>Comments</th>
+        <th>Actions</th>
+      </tr>
+    </table>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="Assignment1.js"></script>
+  </body>
+</html>
